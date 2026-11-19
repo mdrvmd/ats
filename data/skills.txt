@@ -1,0 +1,56 @@
+python
+sql
+pl/sql
+r
+java
+javascript
+c++
+c#
+.net
+excel
+power bi
+tableau
+pandas
+numpy
+scikit-learn
+machine learning
+deep learning
+nlp
+statistics
+airflow
+spark
+hadoop
+docker
+kubernetes
+git
+linux
+postgresql
+mysql
+oracle
+mongodb
+fastapi
+flask
+django
+streamlit
+splunk
+jira
+confluence
+aws
+azure
+gcp
+etl
+data analysis
+data visualization
+a/b testing
+accounting
+bookkeeping
+payroll
+sales
+marketing
+project management
+customer service
+recruitment
+машинное обучение
+анализ данных
+бухгалтерский учёт
+управление проектами
