@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "ACCOUNTANT",
+    "text": "Accountant to manage general ledger, accounts payable and receivable, tax returns, reconciliations and monthly financial reporting."
+  },
+  {
+    "id": 2,
+    "title": "ADVOCATE",
+    "text": "Attorney to provide legal advice, draft contracts, conduct legal research and represent clients in court and litigation."
+  },
+  {
+    "id": 3,
+    "title": "AGRICULTURE",
+    "text": "Agriculture specialist to manage crop production, farm operations, soil and irrigation, livestock and agronomy programs."
+  },
+  {
+    "id": 4,
+    "title": "APPAREL",
+    "text": "Apparel merchandiser to manage clothing collections, garment production, fashion trends, fabric sourcing and retail buying."
+  },
+  {
+    "id": 5,
+    "title": "ARTS",
+    "text": "Arts program coordinator to organize exhibitions, theater and music events, work with artists and manage art education programs."
+  },
+  {
+    "id": 6,
+    "title": "AUTOMOBILE",
+    "text": "Automotive technician to diagnose and repair vehicles, engines, brakes and transmissions, and perform vehicle maintenance."
+  },
+  {
+    "id": 7,
+    "title": "AVIATION",
+    "text": "Aviation maintenance technician to inspect and repair aircraft, follow FAA regulations and support flight operations."
+  },
+  {
+    "id": 8,
+    "title": "BANKING",
+    "text": "Banking officer to open customer accounts, process loans and deposits, ensure compliance and provide branch customer service."
+  },
+  {
+    "id": 9,
+    "title": "BPO",
+    "text": "BPO call center agent to handle inbound and outbound customer calls, resolve client issues and meet process quality targets."
+  },
+  {
+    "id": 10,
+    "title": "BUSINESS-DEVELOPMENT",
+    "text": "Business development manager to find new clients, build partnerships, generate leads and grow company revenue."
+  },
+  {
+    "id": 11,
+    "title": "CHEF",
+    "text": "Chef to prepare dishes, plan menus, manage the kitchen staff, ensure food safety and control food costs."
+  },
+  {
+    "id": 12,
+    "title": "CONSTRUCTION",
+    "text": "Construction project manager to supervise building sites, contractors, safety, schedules and construction budgets."
+  },
+  {
+    "id": 13,
+    "title": "CONSULTANT",
+    "text": "Consultant to analyze client business problems, recommend solutions, lead projects and present findings to stakeholders."
+  },
+  {
+    "id": 14,
+    "title": "DESIGNER",
+    "text": "Designer to create visual concepts, layouts and branding using Adobe Photoshop, Illustrator and InDesign."
+  },
+  {
+    "id": 15,
+    "title": "DIGITAL-MEDIA",
+    "text": "Digital media specialist to manage social media, create video and web content, run online campaigns and analyze engagement."
+  },
+  {
+    "id": 16,
+    "title": "ENGINEERING",
+    "text": "Engineer to design mechanical and electrical systems, use AutoCAD, perform testing and manage engineering projects."
+  },
+  {
+    "id": 17,
+    "title": "FINANCE",
+    "text": "Financial analyst to build financial models, forecasts and budgets, analyze investments and prepare financial statements."
+  },
+  {
+    "id": 18,
+    "title": "FITNESS",
+    "text": "Fitness trainer to lead personal training sessions and group exercise classes, design workout programs and coach clients."
+  },
+  {
+    "id": 19,
+    "title": "HEALTHCARE",
+    "text": "Healthcare professional to provide patient care, maintain medical records, assist physicians and follow clinical procedures."
+  },
+  {
+    "id": 20,
+    "title": "HR",
+    "text": "HR specialist to manage recruitment, onboarding, employee relations, payroll, benefits and HR policies."
+  },
+  {
+    "id": 21,
+    "title": "INFORMATION-TECHNOLOGY",
+    "text": "IT specialist to support networks, servers and help desk, manage systems administration and troubleshoot hardware and software."
+  },
+  {
+    "id": 22,
+    "title": "PUBLIC-RELATIONS",
+    "text": "Public relations specialist to write press releases, manage media relations, plan events and handle corporate communications."
+  },
+  {
+    "id": 23,
+    "title": "SALES",
+    "text": "Sales representative to sell products, meet sales targets, manage customer accounts and negotiate deals."
+  },
+  {
+    "id": 24,
+    "title": "TEACHER",
+    "text": "Teacher to plan lessons, teach students in the classroom, assess student progress and communicate with parents."
+  }
+]
