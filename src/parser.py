@@ -85,4 +85,4 @@ def parse_resume(path):
         "raw_text": text,
     }
 
-parse_resume("../data/resumes/Мадияров Мади cv (1).pdf")
+# parse_resume("../data/resumes/Мадияров Мади cv (1).pdf")
