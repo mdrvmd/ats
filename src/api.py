@@ -1,9 +1,10 @@
 import json
 
 from fastapi import FastAPI, HTTPException, Query
-
+import pandas as pd
 from src.matching import DATA, rerank, search, search_tfidf
-
+from src import matching
+from src.mail_client import fetch_resumes
 app = FastAPI(title="AI Recruiting Agent")
 
 with open(DATA / "vacancies.json", encoding="utf-8") as f:
@@ -18,6 +19,9 @@ def to_candidates(result, with_llm):
             "category": row["Category"],
             "score": round(float(row["score"]), 3),
             "preview": row["Resume_str"][:300].strip(),
+            "source": row.get("source", "dataset"),
+            "name": None if pd.isna(row.get("name")) else row.get("name"),
+            "email": None if pd.isna(row.get("email")) else row.get("email"),
         }
         if with_llm:
             item["llm_score"] = float(row["llm_score"])
@@ -61,3 +65,12 @@ def recommendations(
         result, with_llm = rerank(vacancy_text, k=top_k), True
 
     return {"strategy": strategy, "candidates": to_candidates(result, with_llm)}
+
+@app.post("/ingest")
+def ingest():
+    try:
+        files = fetch_resumes()
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=f"Почта недоступна: {e}")
+    total = matching.reload_candidates()
+    return {"new_files": files, "email_candidates": total}

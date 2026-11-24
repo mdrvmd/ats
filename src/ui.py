@@ -6,6 +6,16 @@ API_URL = "http://127.0.0.1:8000"
 st.set_page_config(page_title="AI Recruiting Agent", page_icon="🤖", layout="wide")
 st.title("AI Recruiting Agent")
 st.caption("Подбор кандидатов под вакансию: TF-IDF, Sentence-BERT и LLM с объяснениями")
+with st.sidebar:
+    st.header("📥 Почта")
+    if st.button("Забрать резюме из почты"):
+        with st.spinner("Проверяем почту..."):
+            resp = requests.post(f"{API_URL}/ingest", timeout=120)
+        if resp.status_code == 200:
+            data = resp.json()
+            st.success(f"Новых резюме: {len(data['new_files'])}. Всего из почты: {data['email_candidates']}")
+        else:
+            st.error(f"Ошибка {resp.status_code}: {resp.text}")
 
 # --- список вакансий из API ---
 try:
@@ -51,7 +61,10 @@ if st.button("Найти кандидатов", type="primary"):
     else:
         for i, c in enumerate(resp.json()["candidates"], start=1):
             with st.container(border=True):
-                st.subheader(f"{i}. Кандидат #{c['candidate_id']} · {c['category']}")
+                title = c["name"] if c.get("source") == "email" and c.get("name") else f"Кандидат #{c['candidate_id']}"
+                st.subheader(f"{i}. {title} · {c['category']}")
+                if c.get("email"):
+                    st.caption(f"📧 {c['email']}")
                 col1, col2 = st.columns(2)
                 col1.metric("Сходство (поиск)", f"{c['score']:.2f}")
                 if "llm_score" in c:
