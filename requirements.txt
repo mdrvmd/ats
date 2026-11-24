@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+sentence-transformers
+groq
+python-dotenv
+pdfplumber
+python-docx
+imap-tools
+fastapi
+uvicorn
+streamlit
+requests
